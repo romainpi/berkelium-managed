@@ -1,0 +1,3 @@
+[submodule "berkelium"]
+	path = berkelium
+	url = git://github.com/romainpi/berkelium.git
