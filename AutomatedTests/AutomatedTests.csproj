@@ -57,7 +57,6 @@
     <Compile Include="BasicTests.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProtocolHandlerTests.cs" />
     <Compile Include="..\ManagedUtils\FileProtocolHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
