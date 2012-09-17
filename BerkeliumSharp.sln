@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BerkeliumSharp", "BerkeliumManaged\BerkeliumManaged.vcproj", "{B5180D42-A3FC-4124-B44D-06D780B56048}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBC8887A-61BF-4B64-8F23-255B82D60956} = {BBC8887A-61BF-4B64-8F23-255B82D60956}
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A} = {D81F59F1-DB27-49AE-B459-8F0E2383621A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "berkelium", "berkelium\win32\berkelium.vcproj", "{D81F59F1-DB27-49AE-B459-8F0E2383621A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "subprocess", "berkelium\win32\subprocess\subprocess.vcproj", "{BBC8887A-61BF-4B64-8F23-255B82D60956}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A} = {D81F59F1-DB27-49AE-B459-8F0E2383621A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerkeliumTest", "BerkeliumTest\BerkeliumTest.csproj", "{43AF61A2-6CED-482B-9974-DBB7E5ADEE1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerkeliumXNATest", "BerkeliumXNATest\BerkeliumXNATest.csproj", "{114F92ED-7053-4A40-82F6-EF55B1632BE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B5180D42-A3FC-4124-B44D-06D780B56048} = {B5180D42-A3FC-4124-B44D-06D780B56048}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTests", "AutomatedTests\AutomatedTests.csproj", "{227FB991-A39E-4B16-8462-426CDED75843}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugBerkelium|Win32 = DebugBerkelium|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5180D42-A3FC-4124-B44D-06D780B56048}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5180D42-A3FC-4124-B44D-06D780B56048}.Debug|Win32.Build.0 = Debug|Win32
+		{B5180D42-A3FC-4124-B44D-06D780B56048}.DebugBerkelium|Win32.ActiveCfg = DebugBerkelium|Win32
+		{B5180D42-A3FC-4124-B44D-06D780B56048}.DebugBerkelium|Win32.Build.0 = DebugBerkelium|Win32
+		{B5180D42-A3FC-4124-B44D-06D780B56048}.Release|Win32.ActiveCfg = Release|Win32
+		{B5180D42-A3FC-4124-B44D-06D780B56048}.Release|Win32.Build.0 = Release|Win32
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A}.Debug|Win32.Build.0 = Debug|Win32
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A}.DebugBerkelium|Win32.ActiveCfg = Debug|Win32
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A}.DebugBerkelium|Win32.Build.0 = Debug|Win32
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A}.Release|Win32.ActiveCfg = Release|Win32
+		{D81F59F1-DB27-49AE-B459-8F0E2383621A}.Release|Win32.Build.0 = Release|Win32
+		{BBC8887A-61BF-4B64-8F23-255B82D60956}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBC8887A-61BF-4B64-8F23-255B82D60956}.Debug|Win32.Build.0 = Debug|Win32
+		{BBC8887A-61BF-4B64-8F23-255B82D60956}.DebugBerkelium|Win32.ActiveCfg = Debug|Win32
+		{BBC8887A-61BF-4B64-8F23-255B82D60956}.DebugBerkelium|Win32.Build.0 = Debug|Win32
+		{BBC8887A-61BF-4B64-8F23-255B82D60956}.Release|Win32.ActiveCfg = Release|Win32
+		{BBC8887A-61BF-4B64-8F23-255B82D60956}.Release|Win32.Build.0 = Release|Win32
+		{43AF61A2-6CED-482B-9974-DBB7E5ADEE1D}.Debug|Win32.ActiveCfg = Debug|x86
+		{43AF61A2-6CED-482B-9974-DBB7E5ADEE1D}.Debug|Win32.Build.0 = Debug|x86
+		{43AF61A2-6CED-482B-9974-DBB7E5ADEE1D}.DebugBerkelium|Win32.ActiveCfg = DebugBerkelium|x86
+		{43AF61A2-6CED-482B-9974-DBB7E5ADEE1D}.DebugBerkelium|Win32.Build.0 = DebugBerkelium|x86
+		{43AF61A2-6CED-482B-9974-DBB7E5ADEE1D}.Release|Win32.ActiveCfg = Release|x86
+		{43AF61A2-6CED-482B-9974-DBB7E5ADEE1D}.Release|Win32.Build.0 = Release|x86
+		{114F92ED-7053-4A40-82F6-EF55B1632BE0}.Debug|Win32.ActiveCfg = Debug|x86
+		{114F92ED-7053-4A40-82F6-EF55B1632BE0}.Debug|Win32.Build.0 = Debug|x86
+		{114F92ED-7053-4A40-82F6-EF55B1632BE0}.DebugBerkelium|Win32.ActiveCfg = DebugBerkelium|x86
+		{114F92ED-7053-4A40-82F6-EF55B1632BE0}.DebugBerkelium|Win32.Build.0 = DebugBerkelium|x86
+		{114F92ED-7053-4A40-82F6-EF55B1632BE0}.Release|Win32.ActiveCfg = Release|x86
+		{114F92ED-7053-4A40-82F6-EF55B1632BE0}.Release|Win32.Build.0 = Release|x86
+		{F0EA7331-3EAB-45A3-8839-E8A22E1E6E80}.Debug|Win32.ActiveCfg = Debug|x86
+		{F0EA7331-3EAB-45A3-8839-E8A22E1E6E80}.DebugBerkelium|Win32.ActiveCfg = Debug|x86
+		{F0EA7331-3EAB-45A3-8839-E8A22E1E6E80}.Release|Win32.ActiveCfg = Release|x86
+		{227FB991-A39E-4B16-8462-426CDED75843}.Debug|Win32.ActiveCfg = Debug|x86
+		{227FB991-A39E-4B16-8462-426CDED75843}.DebugBerkelium|Win32.ActiveCfg = Debug|x86
+		{227FB991-A39E-4B16-8462-426CDED75843}.Release|Win32.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
