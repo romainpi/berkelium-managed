@@ -1,0 +1,20 @@
+ABOUT:
+Berkelium-Managed provides a managed wrapper for the Berkelium library, allowing you to embed
+Chromium into applications written in managed languages like C# and VB.net.
+
+It is based on BerkeliumSharp by Kevin Gadd:
+https://code.google.com/p/berkelium-sharp/
+
+BUILDING:
+To build Berkelium-managed you first need to apply the patches in patches/ these will fix the
+paths of the berkelium projects. (Use 'patch -i XXXX.patch -p 0').
+
+You can then open BerkeliumManaged.sln and build.
+
+You'll need to follow the instructions here to get Berkelium to build:
+https://github.com/romainpi/berkelium/blob/chromium11/win32/WINDOWS-BUILDING.txt
+
+AUTHORS:
+The Berkelium team,
+Kevin Gadd,
+Romain Pironneau (on behalf of Île des Médias)
