@@ -18,7 +18,6 @@
 -copy /Y ..\..\chromium\chromium\src\chrome\%profile%\locales\en-US.dll ..\bin\locales\en-US.dll
 -copy /Y ..\..\chromium\chromium\src\chrome\%profile%\resources.pak ..\bin\resources.pak
 -copy /Y ..\..\chromium\chromium\src\chrome\%profile%\wow_helper.exe ..\bin\wow_helper.exe
-
 +copy /Y ..\..\..\chromium\chromium\src\chrome\%profile%\avcodec-52.dll ..\..\bin\avcodec-52.dll
 +copy /Y ..\..\..\chromium\chromium\src\chrome\%profile%\avformat-52.dll ..\..\bin\avformat-52.dll
 +copy /Y ..\..\..\chromium\chromium\src\chrome\%profile%\avutil-50.dll ..\..\bin\avutil-50.dll
