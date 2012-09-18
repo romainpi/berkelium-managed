@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="BerkeliumSharp"
+	Name="BerkeliumManaged"
 	ProjectGUID="{B5180D42-A3FC-4124-B44D-06D780B56048}"
-	RootNamespace="BerkeliumSharp"
+	RootNamespace="BerkeliumManaged"
 	Keyword="ManagedCProj"
 	TargetFrameworkVersion="196613"
 	>
@@ -62,7 +62,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="$(NoInherit) ..\bin\berkelium_d.lib"
-				OutputFile="..\bin\BerkeliumSharp.dll"
+				OutputFile="..\bin\BerkeliumManaged.dll"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(FrameworkSDKDir)..\v6.0A\Lib&quot;;&quot;$(FrameworkSDKDir)..\v6.0A\Lib\x64&quot;"
 				AdditionalManifestDependencies=""
@@ -92,7 +92,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy /Y D:\build\berkelium-sharp-IDM\bin\BerkeliumSharp.dll D:\ViaDirect\bin\BerkeliumSharp.dll"
+				CommandLine="copy /Y D:\build\berkelium-sharp-IDM\bin\BerkeliumManaged.dll D:\ViaDirect\bin\BerkeliumManaged.dll"
 			/>
 		</Configuration>
 		<Configuration
@@ -143,7 +143,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="$(NoInherit) ..\bin\berkelium.lib"
-				OutputFile="..\bin\BerkeliumSharp.dll"
+				OutputFile="..\bin\BerkeliumManaged.dll"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="&quot;$(FrameworkSDKDir)..\v6.0A\Lib&quot;;&quot;$(FrameworkSDKDir)..\v6.0A\Lib\x64&quot;"
 				EmbedManagedResourceFile="..\bin\berkelium.dll;..\bin\berkelium.exe;..\..\chromium\chromium\src\chrome\$(ConfigurationName)\icudt46.dll;..\..\chromium\chromium\src\chrome\$(ConfigurationName)\avutil-50.dll;..\..\chromium\chromium\src\chrome\$(ConfigurationName)\avformat-52.dll;..\..\chromium\chromium\src\chrome\$(ConfigurationName)\avcodec-52.dll;..\..\chromium\chromium\src\chrome\$(ConfigurationName)\wow_helper.exe;..\..\chromium\chromium\src\chrome\$(ConfigurationName)\locales\en-US.dll"
@@ -173,7 +173,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy /Y D:\build\berkelium-sharp-IDM\bin\BerkeliumSharp.dll D:\ViaDirect\bin\BerkeliumSharp.dll"
+				CommandLine="copy /Y D:\build\berkelium-sharp-IDM\bin\BerkeliumManaged.dll D:\ViaDirect\bin\BerkeliumManaged.dll"
 			/>
 		</Configuration>
 		<Configuration
@@ -222,7 +222,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="$(NoInherit) ..\bin\berkelium_d.lib"
-				OutputFile="..\bin\BerkeliumSharp.dll"
+				OutputFile="..\bin\BerkeliumManaged.dll"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(FrameworkSDKDir)..\v6.0A\Lib&quot;;&quot;$(FrameworkSDKDir)..\v6.0A\Lib\x64&quot;"
 				AdditionalManifestDependencies=""
@@ -252,7 +252,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy /Y $(TargetDir)BerkeliumSharp.dll ..\..\..\ViaDirect\bin\BerkeliumSharp.dll&#x0D;&#x0A;copy /Y $(TargetDir)BerkeliumSharp.pdb ..\..\..\ViaDirect\bin\BerkeliumSharp.pdb&#x0D;&#x0A;"
+				CommandLine="copy /Y $(TargetDir)BerkeliumManaged.dll ..\..\..\ViaDirect\bin\BerkeliumManaged.dll&#x0D;&#x0A;copy /Y $(TargetDir)BerkeliumManaged.pdb ..\..\..\ViaDirect\bin\BerkeliumManaged.pdb&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>
@@ -289,7 +289,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\BerkeliumSharp.cpp"
+				RelativePath=".\BerkeliumManaged.cpp"
 				>
 			</File>
 			<File
@@ -327,7 +327,7 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\BerkeliumSharp.h"
+				RelativePath=".\BerkeliumManaged.h"
 				>
 			</File>
 			<File

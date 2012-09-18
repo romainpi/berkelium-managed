@@ -39,9 +39,9 @@ namespace BerkeliumXNATest {
             graphics.PreferMultiSampling = false;
 
 #if !DEBUG_BERKELIUM
-            BerkeliumSharp.Init(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "BerkeliumXNATest"));
+            BerkeliumManaged.Init(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "BerkeliumXNATest"));
 #else
-			BerkeliumSharp.Init(@"D:\build\berkelium-managed\bin");
+			BerkeliumManaged.Init(@"D:\build\berkelium-managed\bin");
 #endif
 		}
 
@@ -139,7 +139,7 @@ namespace BerkeliumXNATest {
 
         public void Teardown () {
             browser.Dispose();
-            BerkeliumSharp.Destroy();
+            BerkeliumManaged.Destroy();
         }
 
         protected override void Update (GameTime gameTime) {
@@ -202,7 +202,7 @@ namespace BerkeliumXNATest {
             browser.Cleanup();
 
             if (browser != null)
-                BerkeliumSharp.Update();
+                BerkeliumManaged.Update();
 
             base.Update(gameTime);
         }

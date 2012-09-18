@@ -164,7 +164,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BerkeliumManaged\BerkeliumManaged.vcproj">
       <Project>{B5180D42-A3FC-4124-B44D-06D780B56048}</Project>
-      <Name>BerkeliumSharp</Name>
+      <Name>BerkeliumManaged</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

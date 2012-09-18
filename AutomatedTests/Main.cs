@@ -33,13 +33,13 @@ namespace AutomatedTests {
 
             Directory.CreateDirectory(dataPath);
 
-            BerkeliumSharp.Init(dataPath);
+            BerkeliumManaged.Init(dataPath);
 
             RunTestFixture<BasicTests>(ref exitCode);
             RunTestFixture<ProtocolHandlerTests>(ref exitCode);
 
             // Crashes :(
-            // BerkeliumSharp.Destroy();
+            // BerkeliumManaged.Destroy();
 
             // Hangs :(
             // Environment.Exit(exitCode);

@@ -70,11 +70,11 @@ namespace Berkelium.Managed
 			if (Lock != null)
 				Monitor.Exit(Lock);
 
-			BerkeliumSharp.Update();
+			BerkeliumManaged.Update();
 
 			base.Resize(width, height);
 
-			BerkeliumSharp.Update();
+			BerkeliumManaged.Update();
 		}
 
 		public void Cleanup()

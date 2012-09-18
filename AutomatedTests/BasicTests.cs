@@ -23,13 +23,13 @@ namespace AutomatedTests {
 
         public void Setup () {
             Context = Context.Create();
-            BerkeliumSharp.Update();
+            BerkeliumManaged.Update();
         }
 
         public void Teardown () {
             Context.Dispose();
             Context = null;
-            BerkeliumSharp.Update();
+            BerkeliumManaged.Update();
         }
 
         public unsafe Bitmap HandlePaint (Window window, string outputFilename) {
@@ -153,7 +153,7 @@ namespace AutomatedTests {
                         expectedValue, holder.Value
                     ));
 
-                BerkeliumSharp.Update();
+                BerkeliumManaged.Update();
             }
         }
     }

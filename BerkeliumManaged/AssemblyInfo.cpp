@@ -11,11 +11,11 @@ using namespace System::Security::Permissions;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly:AssemblyTitleAttribute("BerkeliumSharp")];
+[assembly:AssemblyTitleAttribute("BerkeliumManaged")];
 [assembly:AssemblyDescriptionAttribute("Managed wrapper for the Berkelium library")];
 [assembly:AssemblyConfigurationAttribute("")];
 [assembly:AssemblyCompanyAttribute("Squared Interactive")];
-[assembly:AssemblyProductAttribute("BerkeliumSharp")];
+[assembly:AssemblyProductAttribute("BerkeliumManaged")];
 [assembly:AssemblyCopyrightAttribute("Copyright (c) Kevin Gadd 2010")];
 [assembly:AssemblyTrademarkAttribute("")];
 [assembly:AssemblyCultureAttribute("")];

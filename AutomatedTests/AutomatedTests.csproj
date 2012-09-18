@@ -33,9 +33,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BerkeliumSharp, Version=1.0.3710.36615, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="BerkeliumManaged, Version=1.0.3710.36615, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\BerkeliumSharp.dll</HintPath>
+      <HintPath>..\bin\BerkeliumManaged.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=2.5.3.9345, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />

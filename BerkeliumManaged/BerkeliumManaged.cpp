@@ -2,7 +2,7 @@
 
 #include "stdafx.h"
 
-#include "BerkeliumSharp.h"
+#include "BerkeliumManaged.h"
 
 using namespace System::Text;
 using namespace System::Resources;
@@ -10,7 +10,7 @@ using namespace System::Reflection;
 
 namespace Berkelium {
   namespace Managed {
-    void BerkeliumSharp::Init (String ^ homeDirectory) {
+    void BerkeliumManaged::Init (String ^ homeDirectory) {
 
         if (IsInitialized)
           return;
@@ -39,7 +39,7 @@ namespace Berkelium {
           dllDirectory = Path::Combine(
             Environment::GetFolderPath(
               System::Environment::SpecialFolder::LocalApplicationData
-            ), "BerkeliumSharp"
+            ), "BerkeliumManaged"
           );
         }
 
@@ -262,11 +262,11 @@ namespace Berkelium {
     }
 
     void ErrorDelegateWrapper::onPureCall() {
-      BerkeliumSharp::OnPureCall();
+      BerkeliumManaged::OnPureCall();
     }
 
     void ErrorDelegateWrapper::onInvalidParameter(const wchar_t *expression, const wchar_t *function, const wchar_t *file, unsigned int line, uintptr_t reserved) {
-      BerkeliumSharp::OnInvalidParameter(
+      BerkeliumManaged::OnInvalidParameter(
         gcnew String(expression),
         gcnew String(function),
         gcnew String(file),
@@ -275,11 +275,11 @@ namespace Berkelium {
     }
 
     void ErrorDelegateWrapper::onOutOfMemory() {
-      BerkeliumSharp::OnOutOfMemory();
+      BerkeliumManaged::OnOutOfMemory();
     }
 
     void ErrorDelegateWrapper::onAssertion(const char *assertMessage) {
-      BerkeliumSharp::OnAssertion(
+      BerkeliumManaged::OnAssertion(
         gcnew String(assertMessage)
         );
     }

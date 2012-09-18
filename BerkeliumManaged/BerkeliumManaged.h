@@ -1,4 +1,4 @@
-// BerkeliumSharp.h
+// BerkeliumManaged.h
 
 #pragma once
 
@@ -97,7 +97,7 @@ namespace Berkelium {
     public delegate void AssertionHandler (System::String ^ message);
     public delegate void InvalidParameterHandler (System::String ^ expression, System::String ^ function, System::String ^ file, int lineNumber);
 
-    public ref class BerkeliumSharp abstract sealed {
+    public ref class BerkeliumManaged abstract sealed {
     internal:
       static bool IsInitialized;
       static ErrorDelegateWrapper * Wrapper;
@@ -607,7 +607,7 @@ namespace Berkelium {
       }
 
       ~Window () {
-        if (Native && OwnsHandle && BerkeliumSharp::IsInitialized)
+        if (Native && OwnsHandle && BerkeliumManaged::IsInitialized)
           delete Native;
         if (Wrapper)
           delete Wrapper;

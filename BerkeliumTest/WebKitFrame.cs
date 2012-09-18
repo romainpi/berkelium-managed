@@ -54,7 +54,7 @@ namespace BerkeliumWinFormsTest {
         //  works pretty well considering how easy it is.
         protected static void OnIdle (object sender, EventArgs e) {
             if (InitCount > 0)
-                BerkeliumSharp.Update();
+                BerkeliumManaged.Update();
         }
 
         // We clean up in Application.Exit to avoid any issues with events
@@ -62,7 +62,7 @@ namespace BerkeliumWinFormsTest {
         protected static void OnExit (object sender, EventArgs e) {
             if (InitCount > 0) {
                 InitCount -= 1;
-                BerkeliumSharp.Destroy();
+                BerkeliumManaged.Destroy();
             }
         }
 
@@ -565,19 +565,19 @@ namespace BerkeliumWinFormsTest {
         //  might want to create it earlier and trigger a page load.
         private void WebKitFrame_Load (object sender, EventArgs e) {
             if (InitCount <= 0) {
-				BerkeliumSharp.Init(@"D:\build\berkelium-managed\berkelium\bin");
+				BerkeliumManaged.Init(@"D:\build\berkelium-managed\berkelium\bin");
 
-				//BerkeliumSharp.Init(
+				//BerkeliumManaged.Init(
 				//    Path.Combine(
 				//        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
 				//        "BerkeliumTest"
 				//    )
 				//);
 
-                BerkeliumSharp.PureCall += OnPureCall;
-                BerkeliumSharp.OutOfMemory += OnOutOfMemory;
-                BerkeliumSharp.InvalidParameter += OnInvalidParameter;
-                BerkeliumSharp.Assertion += OnAssertion;
+                BerkeliumManaged.PureCall += OnPureCall;
+                BerkeliumManaged.OutOfMemory += OnOutOfMemory;
+                BerkeliumManaged.InvalidParameter += OnInvalidParameter;
+                BerkeliumManaged.Assertion += OnAssertion;
 
                 Application.Idle += OnIdle;
                 Application.ApplicationExit += OnExit;
